@@ -4,29 +4,28 @@ package br.com.model;
 
 public class Cliente {
     private String nome;
-    private String cpf;
-    private String rg;
     private String telefone;
-    private String endereço;
+    private String endereco;
+    private String rg;
+    private String cpf;
     private String produto;
-    private Double preço;
-    private String data;
     private Integer quantidade;
+    private Double preco;
+    private String data;
 
     public Cliente (){
   }
 
-    public Cliente(String nome, String cpf, String rg, String telefone, String endereço,
-            String produto, Double preço, String data, Integer quantidade) {
+    public Cliente(String nome, String telefone, String endereco, String rg, String cpf, String produto, Integer quantidade, Double preco, String data) {
         this.nome = nome;
-        this.cpf = cpf;
-        this.rg = rg;
         this.telefone = telefone;
-        this.endereço = endereço;
+        this.endereco = endereco;
+        this.rg = rg;
+        this.cpf = cpf;
         this.produto = produto;
-        this.preço = preço;
-        this.data = data;
         this.quantidade = quantidade;
+        this.preco = preco;
+        this.data = data;
     }
 
     public String getNome() {
@@ -37,12 +36,20 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public String getRg() {
@@ -53,20 +60,12 @@ public class Cliente {
         this.rg = rg;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public String getEndereço() {
-        return endereço;
-    }
-
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getProduto() {
@@ -77,12 +76,20 @@ public class Cliente {
         this.produto = produto;
     }
 
-    public Double getPreço() {
-        return preço;
+    public Integer getQuantidade() {
+        return quantidade;
     }
 
-    public void setPreço(Double preço) {
-        this.preço = preço;
+    public void setQuantidade(Integer quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
     }
 
     public String getData() {
@@ -93,14 +100,11 @@ public class Cliente {
         this.data = data;
     }
 
-    public Integer getQuantidade() {
-        return quantidade;
+    
     }
 
-    public void setQuantidade(Integer quantidade) {
-        this.quantidade = quantidade;
-    }
+   
     
+   
     
-    
-}
+   
